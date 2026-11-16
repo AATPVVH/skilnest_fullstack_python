@@ -54,6 +54,7 @@ cuatroPorCuatro = [
     [9,10,11,12]  
     [13,14,15,16]
     ]
+
 print(ejemplo_matriz[3][3])
 
 #🔒 Tuplas: Tipo de datos inmutable (que no se puede modificar) y contiene un conjunto de distintos valores.
