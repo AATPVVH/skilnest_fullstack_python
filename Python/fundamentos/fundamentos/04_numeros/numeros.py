@@ -35,3 +35,4 @@ num1 = float(input("Ingrese su primer numero: "))
 num2 = float(input("Ingrese su segundo numero: "))
 
 promedio = (num1 + num2) /2
+pass
