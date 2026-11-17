@@ -37,8 +37,8 @@ print(gatos) #Imprime: ['Garfield', 'Hello Kitty']
 #Matrices o Arreglos multidimencinales: Son listas que
 
 ejemplo_matriz = [
-    [1,2,3]
-    [4,5,6]
+    [1,2,3],
+    [4,5,6],
     [7,8,9]
     ]
 print(ejemplo_matriz[1][2])
@@ -49,13 +49,13 @@ print(ejemplo_matriz[2][0])
 # Crear matriz 4x4 y mostrar el numero 16 en la terminal
 
 cuatroPorCuatro = [
-    [1,2,3,4]
-    [5,6,7,8]
-    [9,10,11,12]  
+    [1,2,3,4],
+    [5,6,7,8],
+    [9,10,11,12], 
     [13,14,15,16]
     ]
 
-print(cuatroPorcuatro[3][3])
+print(cuatroPorCuatro[3][3])
 
 #🔒 Tuplas: Tipo de datos inmutable (que no se puede modificar) y contiene un conjunto de distintos valores.
 #  Pueden contener distintos tipos de datos.
@@ -71,9 +71,20 @@ print(perro[0]) #Imprime: Scooby Doo
 # Encuentra algunos métodos integrados de los diccionarios aquí.
 
 diccionario_vacio = {}
-persona = {'nombre': 'Carmen', 'edad': 31, 'altura': 1.71, 'usa_lentes': False}
+#forma de almecenar datos en un diccionario: {'llave': 'valor'}
+persona = {'nombre': 'Carmen',
+            'edad': 31,
+            'altura': 1.71,
+            'usa_lentes': False}
 persona['nombre'] = 'Valeria'  # Actualiza si el valor de la llave existente
 persona['hobbies'] = ['jugar videojuegos', 'programación'] 
+#Incorpora nuevas llaves a persona
+#Pofesion, comida favorita, mascotas, peliculas_favoritas
+persona['profesion'] = 'programador' 
+persona['comida-favorita'] = 'pizza'
+persona['mascota'] = 'chou-chou'
+persona['peliculas_favoritas'] = 'ready player one'
+
 
 # Agrega esa clave-valor si no existía previamente
 print(persona)
@@ -81,6 +92,19 @@ print(persona)
 # Imprime: {'nombre': 'Carmen', 'edad': 31, 'altura': 1.71, 'usa_lentes': False, 'hobbies': ['jugar videojuegos', 'programación']}
 altura = persona.pop('altura')  # Elimina la clave indicada y devuelve el valor
 print(altura)    # Imprime: 1.71
-print(persona) 
+#print(persona) 
 
 # salida: {'nombre': 'Carmen', 'edad': 31, 'usa_lentes': False, 'hobbies': ['jugar video
+
+#⚙️ Funciones comunes
+#En caso de no conocer el tipo de dato de una variable o valor, gracias a la función type podemos saberlo
+#  fácilmente. Por ejemplo:
+
+print(type(3.1416)) #Imprime: <class 'float'>
+print(type(persona)) #Imprime <class 'dict'>
+#En tipos de datos que tienen tamaño (por ejemplo: listas, tuplas, diccionarios, cadenas),
+#  podemos usar la función len, que es diminutivo de length (tamaño en español) y que nos 
+# regresa la longitud de este.
+
+print(len(persona)) #Imprime: 4 (la cantidad de pares de clave-valor)
+print(len("Me encanta programar")) #Imprime: 20
